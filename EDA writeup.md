@@ -122,6 +122,7 @@ Nypd = Nypd_df_Jan_to_Mar.groupby(['DATE', 'BORO_NM'])[['BORO_NM']].count()
 Nypd.rename({'BORO_NM' : 'Daily Entries'}, inplace = True,axis = 'columns')
 ```
 6. sort the date for Nypd, and graph it out 
+
 ![Nypd](https://user-images.githubusercontent.com/63031028/113383195-3dd8c480-9338-11eb-8eb2-b1d369bcbd00.png)
 
 ## Tools
@@ -132,7 +133,7 @@ Nypd.rename({'BORO_NM' : 'Daily Entries'}, inplace = True,axis = 'columns')
 - SQL for data storage , and data scanning 
 
 ## Communication
-To summarized what I found, the MTA traffic in Manhattan is way higher than in any other boroughs. However, the reported crimes are more likely to occur in Brooklyn. This evidence indicates that higher number of crime reports doesn't happen during the heavy areas of higher traffic. Moreover, I realized that the peaks and the troughs from the both the graphs share a really similar pattern which both peak on the weekends, and trough on the weekdays. 
+To summarized what I found, the MTA traffic in Manhattan is way higher than in any other boroughs. However, the reported crimes are more likely to occur in Brooklyn. This evidence indicates that higher number of crime reports doesn't happen during the heavy areas of higher traffic. Therefore, they should not hire more polices in Manhattan. Moreover, I realized that the peaks and the troughs from the both the graphs share a really similar pattern which both peak on the weekends, and trough on the weekdays. 
 
 Please go to https://github.com/Calvin-cy/EDA-Project to see a more detailed explanations with the slides. 
 
@@ -142,6 +143,8 @@ Here are the following that we could explore in the future:
 1. Explore further on the TIME columns for both data sets to see if the crime reports happen during specific time and compare the numbers of crimes in specific time to the number of traffic.
 
 2. Incorporate a wealth distribution data to determine if the areas of high number of crime reported are generally poor.
+
+3. Explore further on the Description of internal classification , and the victim race column along with the TIME columns to see what kind of crime would happen during what time and target which sex.
 
 ## Takeaways
 1. The importance of data cleaning
